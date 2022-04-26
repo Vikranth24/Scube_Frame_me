@@ -142,6 +142,22 @@ public class products extends UtilityMethods {
 		clickElement(cacardclick);
 	}
 	
+//	CA CARD 8 PIC1 CLICK
+	@FindBy(xpath = "//li[@class=\"flex cursor-pointer flex-row items-center justify-center rounded-md lg:rounded-2xl  bg-white orange-border  p-4\"]")
+	WebElement cacardpic;
+	
+	public void cacard8pic1click() {
+		clickElement(cacardpic);
+	}
+	
+//	CA CARD 8 PIC2 CLICK
+	@FindBy(xpath = "//li[@class=\"flex cursor-pointer flex-row items-center justify-center rounded-md lg:rounded-2xl  white-border light-body-f3 p-4\"]")
+	WebElement cacardpic2;
+	
+	public void cacard8picc2click() {
+		clickElement(cacardpic2);
+	}
+	
 //	CA CARD 8 CLICK YOURNAME
 	@FindBy(xpath = "//div[@class=\"mb-6\"]/..//input[@id=\"name\"]")
 	WebElement cacardyourname;
@@ -260,6 +276,158 @@ public class products extends UtilityMethods {
 	
 	public void doctorcard12() {
 		clickElement( doctorcardclick);
+	}
+	
+//	WHITE LABEL CARD 6 CLICK
+	@FindBy(xpath = "//h3[text()='White Label Card 6']")
+	WebElement whitelabel6click;
+	
+	public void whitelabelcardclick() {
+		clickElement(whitelabel6click);
+	}
+	
+//	WHITE LABEL CARD 6 PIC1 CLICK
+	@FindBy(xpath = "//li[@class=\"relative flex cursor-pointer flex-row items-center justify-center rounded-md lg:rounded-2xl  bg-white orange-border  p-2\"]")
+	WebElement whitelablepicclick;
+	
+	public void whitelabelcardpic1click() {
+		clickElement(whitelablepicclick);
+	}
+	
+//	WHITE LABEL CARD 6 PIC3 CLICK
+	@FindBy(xpath = "//div[@class=\"w-full lg:w-3/5 flex flex-col items-center justify-center\"]/../..//li[@class=\"flex cursor-pointer flex-row items-center justify-center rounded-md lg:rounded-2xl  white-border light-body-f3 p-4\"]")
+	WebElement whitelabelclick;
+	
+	public void whitelabelcardpic2click() {
+		clickElement(whitelabelclick);
+	}
+	
+//	WHITE LABEL CARD 6 YOUR NAME TEXTFIELD CLICK
+	@FindBy(xpath = "//h2[text()='Please enter the details to be printed on the card.']/..//input[@id=\"name\"]")
+	WebElement whitelabelnametextfield;
+	
+	public void whitelabelyournametextfield() {
+		clickElement(whitelabelnametextfield);
+	}
+	
+//	WHITE LABEL CARD 6 YOUR DESIGNATION TEXTFIELDCLICK
+	@FindBy(xpath = "//h2[text()='Please enter the details to be printed on the card.']/..//input[@id=\"designation\"]")
+	WebElement whitelabeldesignation;
+	
+	public void whitelabeldesignationtextfiled() {
+		clickElement(whitelabeldesignation);
+	}
+	
+//	WHITE LABEL CARD 6 FLAG ICON CLICK
+	@FindBy(xpath = "//h2[text()='Please enter the details to be printed on the card.']/../..//div[@class=\"selected-flag\"]")
+	WebElement whitelabelflagicon;
+	
+	public void whitelabelcardflagicon() {
+		clickElement(whitelabelflagicon);
+	}
+	
+//	WHITE LABEL CARD 6 PHONENUMBER CLICK
+	@FindBy(xpath = "//h2[text()='Please enter the details to be printed on the card.']/..//input[@placeholder=\"081234 56789\"]")
+	WebElement whitelabelcardphonenumber;
+	
+	public void whitelabelcard6phonenumber() {
+		clickElement(whitelabelcardphonenumber);
+	}
+	
+//	WHITE LABEL CARD 6 YOUR COMPANY CLICK
+	@FindBy(xpath = "//h2[text()='Please enter the details to be printed on the card.']/..//input[@id=\"company\"]")
+	WebElement whitelabelyourcompany;
+	
+	public void whitelabelcardyourcompany() {
+		clickElement(whitelabelyourcompany);
+	}
+	
+//	WHITE LABEL CARD 6 UPLOAD CLICK
+	@FindBy(xpath = "//h2[text()='Please enter the details to be printed on the card.']/..//button[@class=\"border shadow-md w-full p-4 text-gray-400 flex flex-col justify-center items-center\"]")
+	WebElement whitelabelupload;
+	
+	public void whitelabelcarduplad() {
+		clickElement(whitelabelupload);
+	}
+	
+//	WHITE LABEL CARD 6 ADD TO CART CLICK
+	@FindBy(xpath = "//button[text()='Add to Cart']")
+	WebElement whitelabeladdtocart;
+	
+	public void whitelabelcardaddtocart() {
+		clickElement(whitelabeladdtocart);
+	}
+	
+//	PREMIMUM CARD 4 CLICK
+	@FindBy(xpath = "//h3[text()='Premium Card 4']")
+	WebElement premimumcard;
+	
+	public void premimumcard4click() {
+		clickElement(premimumcard);
+	}
+	
+//	PREMIMUM CARD 4 NAME CLICK
+	@FindBy(xpath = "//h2[text()='Please enter the details to be printed on the card.']/..//input[@id=\"name\"]")
+	WebElement premimumname;
+	
+	public void premimumcardnameclick() {
+		clickElement(premimumname);
+	}
+	
+//	PREMIMUM CARD 4 FLAGICON CLICK
+	@FindBy(xpath = "//h2[text()='Please enter the details to be printed on the card.']/..//div[@class=\"selected-flag\"]")
+	WebElement premimumflag;
+	
+	public void premimumcardflagicon() {
+		clickElement(premimumflag);
+	}
+	
+//	PREMIMUM CARD 4 PHONENUMBER CLICK
+	@FindBy(xpath = "//h2[text()='Please enter the details to be printed on the card.']/..//input[@placeholder=\"081234 56789\"]")
+	WebElement premimumnumber;
+	
+	public void premimumcardnumber() {
+		clickElement(premimumnumber);
+	}
+	
+//	PREMIMUM CARD 4 DESIGNATION CLICK
+	@FindBy(xpath = "//h2[text()='Please enter the details to be printed on the card.']/..//input[@id=\"designation\"]")
+	WebElement premimumdesignation;
+	
+	public void premimumcarddesignation() {
+		clickElement(premimumdesignation);
+	}
+	
+//	PREMIMUM CARD 4 COMPANY CLICK
+	@FindBy(xpath = "//h2[text()='Please enter the details to be printed on the card.']/..//input[@id=\"company\"]")
+	WebElement premimumcompany;
+	
+	public void premimumcompany() {
+		clickElement(premimumcompany);
+	}
+	
+//	PREMIMUM CARD 4 EMAIL CLICK
+	@FindBy(xpath = "//h2[text()='Please enter the details to be printed on the card.']/..//input[@id=\"email\"]")
+	WebElement premimumemail;
+	
+	public void premimumemailclick() {
+		clickElement(premimumemail);
+	}
+	
+//	PREMIMUM CARD 4 UPLOAD CLICK
+	@FindBy(xpath = "//h2[text()='Please enter the details to be printed on the card.']/..//button[@class=\"border shadow-md w-full p-4 text-gray-400 flex flex-col justify-center items-center\"]")
+	WebElement premimumupload;
+	
+	public void premimumcardupload() {
+		clickElement(premimumupload);
+	}
+	
+//	PREMIMUM CARD 4 ADDTOCART CLICK
+	@FindBy(xpath = "//button[text()='Add to Cart']")
+	WebElement premimumaddtocart;
+	
+	public void premimumcardaddtocart() {
+		clickElement(premimumaddtocart);
 	}
 	
 //	LEARN MORE CLICK
