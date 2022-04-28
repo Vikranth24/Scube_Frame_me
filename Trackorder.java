@@ -1,38 +1,43 @@
-package POM_Repository;
+package Functionality;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
+import org.testng.Reporter;
+import org.testng.annotations.Test;
 
-import generic.UtilityMethods;
+import POM_Repository.Track_OrderPage;
+import generic.Base_Class;
+import generic.ReadExcel;
 
-public class Trackorder extends UtilityMethods {
-	public Trackorder(WebDriver driver) {
-		PageFactory.initElements(driver, this);
-	}
-//	TRACK ORDER CLICK
-	@FindBy(xpath = "//a[text()='Track Order']")
-	WebElement trackorder;
+public class Trackorder extends Base_Class{
 	
-	public void trackorderclick() {
-		clickElement(trackorder);
-	}
-	
-//	ORDER ID
-	@FindBy(id = "search")
-	WebElement orderclick;
-	
-	public void orderid() {
-		clickElement(orderclick);
-	}
-	
-//	CHECK NOW CLICK
-	@FindBy(xpath = "//button[text()='Check now']")
-	WebElement check;
-	
-	public void checknow() {
-		clickElement(check);
+	@Test
+	public void trackorder() {
+		ReadExcel excel = new ReadExcel();
+		String orderid = excel.readStringDataFromExcel("Sheet 2", 1, 0);
+		String expectedResult = excel.readStringDataFromExcel("Sheet 2", 2, 0);
+		String expectedresult1 = excel.readStringDataFromExcel("Sheet 2", 0, 0);
+		
+		Track_OrderPage order = new Track_OrderPage(driver);
+		Assert.assertEquals(driver.getTitle(),expectedResult,"trackorder page is not displayed successfully");
+		Reporter.log("trackorder page is displayed successfully",true);
+		
+		
+		order.trackorderclick();
+		Assert.assertEquals(driver.getTitle(),expectedresult1,"trackorder page is not displayed successfully");
+		Reporter.log("trackorder page is displayed successfully",true);
+		
+		
+		order.orderid(orderid);
+		Assert.assertEquals(driver.getTitle(),expectedresult1,"trackorder page is not displayed successfully");
+		Reporter.log("trackorder page is displayed successfully",true);
+		
+		
+		
+		order.checknow();
+		Assert.assertEquals(driver.getTitle(),expectedresult1,"trackorder page is not displayed successfully");
+		Reporter.log("trackorder page is displayed successfully",true);
+		
+		
 	}
 
 }
